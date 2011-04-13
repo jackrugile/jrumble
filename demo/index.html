@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>jRumble Demo | A jQuery Plugin That Rumbles Elements</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="jRumble is a jQuery plugin that rumbles, vibrates, shakes, and rotates any element you choose." /> 
+	<meta name="keywords" content="jrumble, jquery, plugin, vibrate, shake, jack rugile" />
+	<!--[if IE]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<div id="container">
+	<div id="content">
+		<h2 id="demos">Demos</h2>
+			
+			<h3>Ranges</h3>
+			
+			<div class="demo-box">
+				<h4>rangeX: 2<br/>rangeY: 2<br/>rangeRot: 1</h4>
+				<div id="demo1">1</div>
+			</div>
+			
+			<div class="demo-box">
+				<h4>rangeX: 10<br/>rangeY: 10<br/>rangeRot: 4</h4>
+				<div id="demo2">2</div>
+			</div>
+			
+			<div class="demo-box">
+				<h4>rangeX: 4<br/>rangeY: 0<br/>rangeRot: 0</h4>
+				<div id="demo3">3</div>
+			</div>
+			
+			<div class="demo-box last">
+				<h4>rangeX: 0<br/>rangeY: 0<br/>rangeRot: 5</h4>
+				<div id="demo4">4</div>
+			</div>
+			
+			<div class="view-source">
+				<a href="#">View Source</a>
+				<pre><code>
+$('#demo1').jrumble({
+	rangeX: 2,
+	rangeY: 2,
+	rangeRot: 1
+});
+
+$('#demo2').jrumble({
+	rangeX: 10,
+	rangeY: 10,
+	rangeRot: 4
+});
+
+$('#demo3').jrumble({
+	rangeX: 4,
+	rangeY: 0,
+	rangeRot: 0
+});
+
+$('#demo4').jrumble({
+	rangeX: 0,
+	rangeY: 0,
+	rangeRot: 5
+});
+				</code></pre>
+			</div>
+			
+			<h3>Rumble Speeds</h3>
+			
+			<div class="demo-box">
+				<h4>0</h4>
+				<div id="demo5">5</div>
+			</div>
+			
+			<div class="demo-box">
+				<h4>50</h4>
+				<div id="demo6">6</div>
+			</div>
+			
+			<div class="demo-box">
+				<h4>100</h4>
+				<div id="demo7">7</div>
+			</div>
+			
+			<div class="demo-box last">
+				<h4>200</h4>
+				<div id="demo8">8</div>
+			</div>
+			
+			<div class="view-source">
+				<a href="#">View Source</a>
+				<pre><code>
+$('#demo5').jrumble({
+	rumbleSpeed: 0
+});
+
+$('#demo6').jrumble({
+	rumbleSpeed: 50
+});
+
+$('#demo7').jrumble({
+	rumbleSpeed: 100
+});
+
+$('#demo8').jrumble({
+	rumbleSpeed: 200
+});
+				</code></pre>
+			</div>
+			
+			<h3>Event Types</h3>
+			
+			<div class="demo-box">
+				<h4>Hover</h4>
+				<div id="demo9">9</div>
+			</div>
+			
+			<div class="demo-box">
+				<h4>Click</h4>
+				<div id="demo10">10</div>
+			</div>
+			
+			<div class="demo-box">
+				<h4>Mousedown</h4>
+				<div id="demo11">11</div>
+			</div>
+			
+			<div class="demo-box last">
+				<h4>Constant</h4>
+				<div id="demo12">12</div>
+			</div>
+			
+			<div class="view-source">
+				<a href="#">View Source</a>
+				<pre><code>
+$('#demo9').jrumble({
+	rumbleEvent: 'hover'
+});
+
+$('#demo10').jrumble({
+	rumbleEvent: 'click'
+});
+
+$('#demo11').jrumble({
+	rumbleEvent: 'mousedown'
+});
+
+$('#demo12').jrumble({
+	rumbleEvent: 'constant'
+});
+				</code></pre>
+			</div>			
+			
+		<h3>Absolute Positioning (Fixed positioning uses the same concept)</h3>
+			
+			<div id="position-box">
+				<div class="demo-box" id="demo13">
+					<h4>posX: 'left'<br/>posY: 'top'</h4>
+					<div>13</div>
+				</div>
+				
+				<div class="demo-box" id="demo14">
+					<h4>posX: 'right'<br/>posY: 'top'</h4>
+					<div>14</div>
+				</div>
+				
+				<div class="demo-box" id="demo15">
+					<h4>posX: 'left'<br/>posY: 'bottom'</h4>
+					<div>15</div>
+				</div>
+				
+				<div class="demo-box last" id="demo16">
+					<h4>posX: 'right'<br/>posY: 'bottom'</h4>
+					<div>16</div>
+				</div>
+			</div>
+			
+			<div class="view-source">
+				<a href="#">View Source</a>
+				<pre><code>
+$('#demo13').jrumble({
+	posX: 'left',
+	posY: 'top'
+});
+
+$('#demo14').jrumble({
+	posX: 'right',
+	posY: 'top'
+});
+
+$('#demo15').jrumble({
+	posX: 'left',
+	posY: 'bottom'
+});
+
+$('#demo16').jrumble({
+	posX: 'right',
+	posY: 'bottom'
+});
+				</code></pre>
+		</div>		
+		
+		<h2 id="documentation">Documentation</h2>
+			<h3>Options/Defaults</h3>
+			<table id="options">
+				<thead>
+					<tr>
+						<th>Option</th>
+						<th>Default</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>rangeX</strong></td>
+						<td><em>2</em></td>
+						<td>Set the horizontal rumble range (pixels)</td>
+					</tr>
+					<tr>
+						<td><strong>rangeY</strong></td>
+						<td><em>2</em></td>
+						<td>Set the vertical rumble range (pixels)</td>
+					</tr>
+					<tr>
+						<td><strong>rangeRot</strong></td>
+						<td><em>1</em></td>
+						<td>Set the rotation range (degrees)</td>
+					</tr>
+					<tr>
+						<td><strong>rumbleSpeed</strong></td>
+						<td><em>10</em></td>
+						<td>Set the speed/frequency in milliseconds of the rumble (lower number = faster)</td>
+					</tr>
+					<tr>
+						<td><strong>rumbleEvent</strong></td>
+						<td><em>'hover'</em></td>
+						<td>Set the event that triggers the rumble (<em>'hover'</em>, <em>'click'</em>, <em>'mousedown'</em>, <em>'constant'</em>)</td>
+					</tr>
+					<tr>
+						<td><strong>posX</strong></td>
+						<td><em>'left'</em></td>
+						<td>If using jRumble on a fixed or absolute positioned element, choose <em>'left'</em> or <em>'right'</em> to match your CSS</td>
+					</tr>
+					<tr>
+						<td><strong>posY</strong></td>
+						<td><em>'top'</em></td>
+						<td>If using jRumble on a fixed or absolute positioned element, choose <em>'top'</em> or <em>'bottom'</em> to match your CSS</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-jrumble.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){						   	
+	$('#demo1').jrumble({
+		rangeX: 2,
+		rangeY: 2,
+		rangeRot: 1
+	});
+	
+	$('#demo2').jrumble({
+		rangeX: 10,
+		rangeY: 10,
+		rangeRot: 4
+	});
+	
+	$('#demo3').jrumble({
+		rangeX: 4,
+		rangeY: 0,
+		rangeRot: 0
+	});
+	
+	$('#demo4').jrumble({
+		rangeX: 0,
+		rangeY: 0,
+		rangeRot: 5
+	});
+	
+	$('#demo5').jrumble({
+		rumbleSpeed: 0
+	});
+	
+	$('#demo6').jrumble({
+		rumbleSpeed: 50
+	});
+	
+	$('#demo7').jrumble({
+		rumbleSpeed: 100
+	});
+	
+	$('#demo8').jrumble({
+		rumbleSpeed: 200
+	});
+	
+	$('#demo9').jrumble({
+		rumbleEvent: 'hover'
+	});
+	
+	$('#demo10').jrumble({
+		rumbleEvent: 'click'
+	});
+	
+	$('#demo11').jrumble({
+		rumbleEvent: 'mousedown'
+	});
+	
+	$('#demo12').jrumble({
+		rumbleEvent: 'constant'
+	});	
+	
+	$('#demo13').jrumble({
+		posX: 'left',
+		posY: 'top'
+	});
+	
+	$('#demo14').jrumble({
+		posX: 'right',
+		posY: 'top'
+	});
+	
+	$('#demo15').jrumble({
+		posX: 'left',
+		posY: 'bottom'
+	});
+	
+	$('#demo16').jrumble({
+		posX: 'right',
+		posY: 'bottom'
+	});		
+	
+	$('.view-source pre').hide();
+	$('.view-source a').toggle(function(){
+		$(this).siblings('pre').stop(false, true).slideDown(500);
+		$(this).html('Hide Source');
+	}, function(){
+		$(this).siblings('pre').stop(false, true).slideUp(500);
+		$(this).html('View Source');
+	});
+});
+</script>
+</body>
+</html>

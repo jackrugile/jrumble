@@ -1,0 +1,7 @@
+v1.1 - March 30, 2011
+*Fixed error that occured each time jRumble was triggered - Thanks to tornography for finding this
+*Hover bug fixed with release of jQuery 1.5.2 (1.5.1 was leaving hover state in the "on" position)
+
+v1.0 - March 30, 2011
+*jRumble Initial Release
+	

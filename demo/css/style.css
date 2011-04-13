@@ -1,0 +1,234 @@
+/* CSS by Jack Rugile - http://jackrugile.com */
+/* CSS reset by Richard Clark - html5doctor.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{ margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent}body{ line-height:1}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{ display:block}nav ul{ list-style:none}blockquote,q{ quotes:none}blockquote:before,blockquote:after,q:before,q:after{ content:''; content:none}a{ margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent}ins{ background-color:#ff9; color:#000; text-decoration:none}mark{ background-color:#ff9; color:#000; font-style:italic; font-weight:bold}del{ text-decoration:line-through}abbr[title],dfn[title]{ border-bottom:1px dotted #000; cursor:help}table{ border-collapse:collapse; border-spacing:0}hr{ display:block; height:1px; border:0;  border-top:1px solid #ccc; margin:1em 0; padding:0}input,select{ vertical-align:middle}
+
+body {
+	background: #fff;
+	color: #666;
+	font: 100%/1.5 Arial, Helvetica, sans-serif;
+}
+
+#container {
+	background: #fff;
+	margin: 0 auto;
+	width: 580px;
+}
+
+#content {
+	padding: 40px 0;
+	width: 580px;
+}
+
+h2 {
+	background: #0cf;
+	clear: both;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 60px 0 10px 0;
+	padding: 10px 20px;
+	text-shadow: -1px 1px 0px rgba(0,0,0,.2);
+}
+
+h2:first-child {
+	margin: 0 0 10px 0;	
+}
+
+h3 {
+	border-bottom: 1px dotted #ddd;
+	clear: both;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 15px 0 6px;
+}
+
+
+h4 {
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0 0 5px 0;
+}
+
+p {
+	font-size: 12px;
+	margin: 0 0 20px;
+}
+
+ul {
+	font-size: 12px;
+	list-style: square;	
+	margin: 0 0 0 16px;
+}
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+strong em, em strong { font-weight: bold; font-style: italic;}
+
+pre {
+	background: #e7e7e7;
+	border: 1px dotted #ddd;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	margin: 10px 0 30px;
+	width: 580px;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+pre code {
+	margin: 0 0 0 10px;
+	padding: 0 5px;
+	display: block;
+}
+
+a:link, a:visited {
+	color: #09f;
+	font-weight: bold;
+}
+
+a:hover, a:active {
+	color: #0cf;
+}
+
+header a:link, header a:visited {
+	background: #0cf;
+	border: none;
+	color: #fff;	
+	display: block;
+	font-size: 50px;
+	font-weight: bold;
+	height: 100px;
+	line-height: 100px;
+	margin-bottom: 1px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: -2px 2px 0 rgba(0,0,0,.2);
+	width: 300px;
+}
+
+header a:hover, header a:active {
+	background: #0df;
+}
+
+.demo-box {
+	float: left;
+	margin: 10px 20px 20px 0;
+	width: 130px;	
+}
+
+.demo-box.last {
+	margin: 10px 0 20px;	
+}
+
+.demo-box div {
+	background: #f36;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	height: 130px;
+	line-height: 130px;
+	margin: 10px 0 0 0;
+	text-align: center;
+	text-shadow: -2px 2px 0px rgba(0,0,0,.2);
+}
+
+.demo-box div:hover {
+	background: #f58;	
+}
+
+#position-box {
+	background: #e7e7e7;
+	border: 1px dotted #ddd;	
+	height: 440px;
+	margin: 20px 0;
+	position: relative;
+	width: 578px;
+}
+
+#demo13.demo-box {
+	float: none;
+	left: 40px;
+	margin: 0;
+	position: absolute;
+	top: 20px;
+}
+
+#demo14.demo-box {
+	float: none;
+	margin: 0;
+	position: absolute;
+	right: 40px;
+	top: 20px;
+}
+
+#demo15.demo-box {
+	bottom: 20px;
+	float: none;
+	left: 40px;
+	margin: 0;
+	position: absolute;	
+}
+
+#demo16.demo-box {
+	bottom: 20px;
+	float: none;
+	margin: 0;
+	position: absolute;
+	right: 40px;	
+}
+
+.view-source a:link, .view-source a:visited {
+	background: #bbb;
+	border: none;
+	clear: both;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: -1px 1px 0px rgba(0,0,0,.2);
+	width: 130px;
+}
+
+.view-source a:hover, .view-source a:active {
+	background: #0df;
+}
+
+table#options {
+	border: 1px solid #bbb;
+	font-size: 12px;
+	margin: 20px 0;
+	text-align: left;
+	width: 100%;	
+}
+
+#options thead {
+	background: #bbb;	
+	color: #fff;
+	font-weight: bold;
+	text-shadow: -1px 1px 0px rgba(0,0,0,.2);
+}
+
+#options th {
+	background: #bbb;	
+}
+
+#options th, #options td {
+	border: 1px solid #fff;
+	padding: 12px 18px;	
+}
+
+#options tr {
+	background: #e1e1e1;
+}
+
+#options tr:nth-child(even) {
+	background: #e7e7e7;	
+}
+
+#options tr:hover {
+	background: #d2e3ff;	
+}
