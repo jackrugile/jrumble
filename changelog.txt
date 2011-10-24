@@ -1,7 +1,17 @@
+v1.2 - October 23, 2011
+Plugin reworked to provide greater flexibility and easier binding
+Rumble is now activated with trigger('startRumble') and deactivated with trigger('stopRumble')
+Added an opacity flicker option
+IE speed 0 bug fixed
+IE9+ rotation now supported
+Removed rumbleEvent option
+Removed fixed/absolute positioning options, jRumble element requires wrapped div that is positioned properly
+Compressed code size went from 3.8kb to 1.6kb
+
 v1.1 - March 30, 2011
-*Fixed error that occured each time jRumble was triggered - Thanks to tornography for finding this
-*Hover bug fixed with release of jQuery 1.5.2 (1.5.1 was leaving hover state in the "on" position)
+Fixed error that occured each time jRumble was triggered - Thanks to tornography for finding this
+Hover bug fixed with release of jQuery 1.5.2 (1.5.1 was leaving hover state in the "on" position)
 
 v1.0 - March 30, 2011
-*jRumble Initial Release
+jRumble Initial Release
 	

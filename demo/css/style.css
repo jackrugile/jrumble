@@ -3,20 +3,40 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{ margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent}body{ line-height:1}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{ display:block}nav ul{ list-style:none}blockquote,q{ quotes:none}blockquote:before,blockquote:after,q:before,q:after{ content:''; content:none}a{ margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent}ins{ background-color:#ff9; color:#000; text-decoration:none}mark{ background-color:#ff9; color:#000; font-style:italic; font-weight:bold}del{ text-decoration:line-through}abbr[title],dfn[title]{ border-bottom:1px dotted #000; cursor:help}table{ border-collapse:collapse; border-spacing:0}hr{ display:block; height:1px; border:0;  border-top:1px solid #ccc; margin:1em 0; padding:0}input,select{ vertical-align:middle}
 
 body {
-	background: #fff;
 	color: #666;
-	font: 100%/1.5 Arial, Helvetica, sans-serif;
-}
-
-#container {
-	background: #fff;
-	margin: 0 auto;
-	width: 580px;
+	font: 100%/1.5 helvetica, arial, sans-serif;
 }
 
 #content {
+	margin: 0 auto;
 	padding: 40px 0;
 	width: 580px;
+}
+
+header a:link, header a:visited {
+	background: #0cf;
+	border: none;
+	color: #fff;	
+	display: block;
+	font-size: 50px;
+	font-weight: bold;
+	height: 100px;
+	line-height: 100px;
+	margin-bottom: 40px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: -2px 2px 0 rgba(0,0,0,.2);
+}
+
+header a:hover, header a:active {
+	background: #0df;
+}
+
+header a span {
+	font-size: 18px;
+	position: relative;
+	text-shadow: -1px 1px 0 rgba(0,0,0,.2);
+	top: -20px;
 }
 
 h2 {
@@ -30,7 +50,7 @@ h2 {
 	text-shadow: -1px 1px 0px rgba(0,0,0,.2);
 }
 
-h2:first-child {
+h2:first-of-type {
 	margin: 0 0 10px 0;	
 }
 
@@ -57,7 +77,7 @@ p {
 ul {
 	font-size: 12px;
 	list-style: square;	
-	margin: 0 0 0 16px;
+	margin: 0 0 15px 16px;
 }
 
 strong { font-weight: bold; }
@@ -65,19 +85,20 @@ em { font-style: italic; }
 strong em, em strong { font-weight: bold; font-style: italic;}
 
 pre {
-	background: #e7e7e7;
-	border: 1px dotted #ddd;
+	background: #f5f5f5;
+	border: 1px solid #ddd;
+	color: #333;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 12px;
-	margin: 10px 0 30px;
+	margin: 0;
 	width: 580px;
 	overflow: auto;
 	overflow-y: hidden;
 }
 
 pre code {
-	margin: 0 0 0 10px;
-	padding: 0 5px;
+	margin: 0;
+	padding: 0 10px;
 	display: block;
 }
 
@@ -88,26 +109,6 @@ a:link, a:visited {
 
 a:hover, a:active {
 	color: #0cf;
-}
-
-header a:link, header a:visited {
-	background: #0cf;
-	border: none;
-	color: #fff;	
-	display: block;
-	font-size: 50px;
-	font-weight: bold;
-	height: 100px;
-	line-height: 100px;
-	margin-bottom: 1px;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: -2px 2px 0 rgba(0,0,0,.2);
-	width: 300px;
-}
-
-header a:hover, header a:active {
-	background: #0df;
 }
 
 .demo-box {
@@ -136,47 +137,6 @@ header a:hover, header a:active {
 	background: #f58;	
 }
 
-#position-box {
-	background: #e7e7e7;
-	border: 1px dotted #ddd;	
-	height: 440px;
-	margin: 20px 0;
-	position: relative;
-	width: 578px;
-}
-
-#demo13.demo-box {
-	float: none;
-	left: 40px;
-	margin: 0;
-	position: absolute;
-	top: 20px;
-}
-
-#demo14.demo-box {
-	float: none;
-	margin: 0;
-	position: absolute;
-	right: 40px;
-	top: 20px;
-}
-
-#demo15.demo-box {
-	bottom: 20px;
-	float: none;
-	left: 40px;
-	margin: 0;
-	position: absolute;	
-}
-
-#demo16.demo-box {
-	bottom: 20px;
-	float: none;
-	margin: 0;
-	position: absolute;
-	right: 40px;	
-}
-
 .view-source a:link, .view-source a:visited {
 	background: #bbb;
 	border: none;
@@ -187,6 +147,7 @@ header a:hover, header a:active {
 	font-weight: bold;
 	height: 30px;
 	line-height: 30px;
+	margin: 0;
 	text-align: center;
 	text-decoration: none;
 	text-shadow: -1px 1px 0px rgba(0,0,0,.2);
@@ -231,4 +192,10 @@ table#options {
 
 #options tr:hover {
 	background: #d2e3ff;	
+}
+
+#accessibility {
+	background: #fde;
+	border: 1px solid #fcd;
+	padding: 10px 20px;
 }
