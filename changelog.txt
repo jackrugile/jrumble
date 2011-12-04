@@ -1,3 +1,6 @@
+v1.3 - December 3, 2011
+Internet Explorer filter typo fix ("apha" changed to "alpha")
+
 v1.2 - October 23, 2011
 Plugin reworked to provide greater flexibility and easier binding
 Rumble is now activated with trigger('startRumble') and deactivated with trigger('stopRumble')
