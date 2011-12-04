@@ -1,4 +1,5 @@
 # jRumble v1.3
+*by Jack Rugile - http://jackrugile.com*
 
 jRumble is a [jQuery](http://jquery.com) plugin that rumbles, vibrates, shakes, and rotates any element you choose. It's great to use as a hover effect or a way to direct attention to an element.
 
@@ -70,6 +71,3 @@ Documentation, demos, and discussion can all be found at http://jackrugile.com/j
 
 - For rumble elements that are position fixed/absolute, they should instead be wrapped in an element that is fixed/absolute
 - Rotation does not work in Internet Explorer 8 and below
-
-##### by Jack Rugile - http://jackrugile.com
-
