@@ -11,7 +11,7 @@ jRumble is a [jQuery](http://jquery.com) plugin that rumbles, vibrates, shakes, 
 
 ### Documentation, Demos, and Discussion
 
-Documentation, demos, and discussion can all be found at http://jackrugile.com/jrumble
+Documentation, demos, and discussion can be found at http://jackrugile.com/jrumble
 
 ### Basic Usage
 
