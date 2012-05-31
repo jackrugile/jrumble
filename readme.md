@@ -4,7 +4,8 @@
 jRumble is a [jQuery](http://jquery.com) plugin that rumbles, vibrates, shakes, and rotates any element you choose. It's great to use as a hover effect or a way to direct attention to an element.
 
 - **Latest Version:** 1.3
-- **Release Date:** December 3, 2011
+- **Latest Release Date:** December 3, 2011
+- **Original Release Date:** March 30, 2011
 - **Compressed:** 1.47kb
 - **Uncompressed:** 4.84kb
 

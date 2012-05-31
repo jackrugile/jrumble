@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8" />
 	<title>jRumble | A jQuery Plugin That Rumbles Elements</title>
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/prettify.css" />
-	<meta charset="utf-8" />
-	<!--[if IE]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="css/prettify.css" />		
 </head>
 <body onLoad="prettyPrint()">
 <div id="content">
@@ -16,7 +16,7 @@
 		<h3>Include jQuery and jRumble</h3>
 		<p>Include jQuery and jRumble just before your closing body tag. Make sure the paths to your files are correct. I recommend including via <a href="http://code.google.com/apis/libraries/devguide.html#jquery">Google Libraries API</a>.</p>
 		<pre class="prettyprint"><code>
-&lt;script type="text/javascript" src="js/https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="js/jquery.jrumble.1.3.js"&gt;&lt;/script&gt;
 		</code></pre>
 		<h3>Initialize jRumble on a Selector and Trigger Start or Stop</h3>
@@ -368,11 +368,11 @@ demoStart();
 			<li>Rotation does not work in Internet Explorer 8 and below</li>
 		</ul>		
 	</div>
-<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script> 
-<script type="text/javascript" src="js/prettify.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.jrumble.1.3.min.js"></script> 
+<script src="js/prettify.js"></script>
+<script>
+$(function(){
 	/*========================================================*/
 	/* Ranges
 	/*========================================================*/
