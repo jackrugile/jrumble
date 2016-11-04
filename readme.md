@@ -1,5 +1,12 @@
-# jRumble v1.3
-*by Jack Rugile - http://jackrugile.com*
+# jRumble
+
+[![Project Status: Inactive - The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
+
+#### 2016-11-04 Update
+
+This project is no longer being developed or maintained. I recommend using the the CSS version, [CSSShake](https://elrumordelaluz.github.io/csshake/) by [@elrumordelaluz](https://github.com/elrumordelaluz/). It performs a lot better and has tons of options. 
+
+---
 
 jRumble is a [jQuery](http://jquery.com) plugin that rumbles, vibrates, shakes, and rotates any element you choose. It's great to use as a hover effect or a way to direct attention to an element.
 
