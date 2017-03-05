@@ -1,6 +1,7 @@
 # jRumble
 
 [![Project Status: Inactive - The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
+[![CDNJS version](https://img.shields.io/cdnjs/v/jrumble.svg)](https://cdnjs.com/libraries/jrumble)
 
 #### 2016-11-04 Update
 
